@@ -2,7 +2,7 @@
 
 A comprehensive platform for automated cointegration scanning, mean-reversion signal generation, event-driven backtesting with realistic frictions, and auto-generated PDF/HTML performance reports.
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Clone and Setup
 ```bash
@@ -58,7 +58,7 @@ pipeline = ResearchPipeline(config)
 results = await pipeline.run_full_pipeline()
 ```
 
-## 📊 Features
+##  Features
 
 ### Data Management
 - **Multiple Data Sources**: YFinance, CCXT (crypto), Parquet files
@@ -100,7 +100,7 @@ exchanges: ["binance", "coinbase"]
 min_volume: 1000000
 ```
 
-## 📈 Usage Examples
+##  Usage Examples
 
 ### 1. Equity Pairs Research
 ```bash
@@ -131,7 +131,7 @@ python -m xstat.cli web serve --port 8000
 # Access dashboard at http://localhost:8000
 ```
 
-## 🔧 Development
+##  Development
 
 ### Project Structure
 ```
@@ -175,7 +175,7 @@ flake8 xstat/
 - 4GB+ RAM (for large datasets)
 - Internet connection (for data feeds)
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -183,11 +183,11 @@ flake8 xstat/
 4. Add tests
 5. Submit a pull request
 
-## 📄 License
+##  License
 
 MIT License - see LICENSE file for details.
 
-## 🆘 Support
+##  Support
 
 - GitHub Issues: [Report bugs and request features](https://github.com/DomanMahler/xstat/issues)
 - Documentation: [Full documentation](https://github.com/DomanMahler/xstat/wiki)
