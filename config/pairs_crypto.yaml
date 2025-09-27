@@ -1,0 +1,57 @@
+# Configuration for cryptocurrency pairs research
+
+# Universe and data settings
+universe: "crypto_majors"
+start_date: "2021-01-01"
+end_date: "2023-01-01"
+timeframe: "1d"
+
+# Research parameters
+min_lookback: 365
+max_pairs: 50
+train_ratio: 0.6
+test_ratio: 0.2
+validation_ratio: 0.2
+
+# Statistical tests - more lenient for crypto
+cointegration:
+  significance_level: 0.05
+  min_correlation: 0.4
+  max_half_life: 60.0
+  min_cointegration_score: 0.6
+
+# Signal generation - more aggressive for crypto
+signals:
+  entry_z_threshold: 1.5
+  exit_z_threshold: 0.5
+  max_position_size: 1.0
+  min_half_life: 1.0
+  max_half_life: 60.0
+  regime_filter: true
+
+# Backtesting - crypto-specific costs
+backtest:
+  initial_capital: 1000000.0
+  commission_rate: 0.001  # 0.1% maker/taker
+  slippage_rate: 0.001   # 0.1% slippage
+  borrow_rate: 0.05      # 5% annual borrow rate
+  max_leverage: 3.0
+  min_trade_size: 100.0
+
+# Risk management - more aggressive for crypto
+risk:
+  max_leverage: 3.0
+  max_position_size: 0.25
+  max_portfolio_exposure: 1.0
+  target_volatility: 0.25
+  var_confidence: 0.05
+  max_drawdown: 0.30
+
+# Crypto-specific settings
+crypto:
+  exchange: "binance"
+  min_volume_24h: 1000000  # $1M minimum daily volume
+  max_spread_bps: 50       # 0.5% maximum spread
+
+# Random seed for reproducibility
+seed: 42

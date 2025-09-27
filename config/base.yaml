@@ -1,0 +1,51 @@
+# Base configuration for xstat research platform
+
+# Universe and data settings
+universe: "sp100"
+start_date: "2020-01-01"
+end_date: "2023-01-01"
+timeframe: "1d"
+
+# Research parameters
+min_lookback: 252
+max_pairs: 50
+train_ratio: 0.6
+test_ratio: 0.2
+validation_ratio: 0.2
+
+# Statistical tests
+cointegration:
+  significance_level: 0.05
+  min_correlation: 0.5
+  max_half_life: 30.0
+  min_cointegration_score: 0.7
+
+# Signal generation
+signals:
+  entry_z_threshold: 2.0
+  exit_z_threshold: 0.5
+  max_position_size: 1.0
+  min_half_life: 1.0
+  max_half_life: 30.0
+  regime_filter: true
+
+# Backtesting
+backtest:
+  initial_capital: 1000000.0
+  commission_rate: 0.001
+  slippage_rate: 0.0005
+  borrow_rate: 0.02
+  max_leverage: 2.0
+  min_trade_size: 1000.0
+
+# Risk management
+risk:
+  max_leverage: 2.0
+  max_position_size: 0.2
+  max_portfolio_exposure: 1.0
+  target_volatility: 0.15
+  var_confidence: 0.05
+  max_drawdown: 0.20
+
+# Random seed for reproducibility
+seed: 42
