@@ -81,7 +81,7 @@ results = await pipeline.run_full_pipeline()
 - **PDF Reports**: Professional research documents
 - **Web Interface**: Real-time monitoring
 
-## 🛠️ Configuration
+##  Configuration
 
 ### Base Configuration (`config/base.yaml`)
 ```yaml
@@ -169,7 +169,7 @@ black xstat/
 flake8 xstat/
 ```
 
-## 📋 Requirements
+##  Requirements
 
 - Python 3.8+
 - 4GB+ RAM (for large datasets)
